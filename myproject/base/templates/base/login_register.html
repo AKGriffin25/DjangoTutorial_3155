@@ -7,11 +7,11 @@
     <form method="POST" action="">
         {% csrf_token %}
         
-        <label for="">Username:</label>
+        <label>Username:</label>
         <input type="text" name="Username" placeholder="Enter Username" />
         
-        <label for="">Password:</label>
-        <input type="text" name="Password" placeholder="Enter Password" />
+        <label>Password:</label>
+        <input type="password" name="Password" placeholder="Enter Password" />
 
         <a href="{{request.META.HTTP_REFERER}}"> Go Back </a>
         <input type="submit" value="login" />
